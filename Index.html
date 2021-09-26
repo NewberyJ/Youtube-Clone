@@ -3,13 +3,14 @@
   <head>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="javascript" href="index.js">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Youtube-C </title>
   </head>
-  <body>
+  <body onload="addLoadEvent();">
 
     <header class="header">
       <a href="#"> <img src="logo.png" alt="Youtube Logo" class="youtube-logo"></a>
@@ -61,10 +62,11 @@
                 <div class="video-details">
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
-                  <div id="video-metadata">
-                    <span>poopy</span>
+                  <div class="video-metadata">
+
+                    <span id="views"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time"> </span> years ago
 
 
 
@@ -87,9 +89,9 @@
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
                   <div class="video-metadata">
-                    <span>256,000 views</span>
+                    <span id="views2"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time2"></span> years ago
 
 
 
@@ -112,9 +114,9 @@
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
                   <div class="video-metadata">
-                    <span>256,000 views</span>
+                    <span id="views3"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time3"></span> years ago
 
 
 
@@ -137,9 +139,9 @@
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
                   <div class="video-metadata">
-                    <span>256,000 views</span>
+                    <span id="views4"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time4"></span> years ago
 
 
 
@@ -162,9 +164,9 @@
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
                   <div class="video-metadata">
-                    <span>256,000 views</span>
+                    <span id="views5"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time5"></span> years ago
 
 
 
@@ -187,9 +189,9 @@
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
                   <div class="video-metadata">
-                    <span>256,000 views</span>
+                    <span id="views6"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time6"></span> years ago
 
 
 
@@ -212,9 +214,9 @@
                   <a class="video-title" href="#">Video Title</a>
                   <a class="video-channel-name" href="#">channel name</a>
                   <div class="video-metadata">
-                    <span>256,000 views</span>
+                    <span id="views7"> </span> views
                     •
-                    <span>4 years ago</span>
+                    <span id="time7"></span> years ago
 
 
 
@@ -574,13 +576,11 @@
         </section>
     </div>
 
+     <script src="https://randojs.com/1.0.0.js"></script>
+      <script src="index.js">
 
-<script type="text/javascript">
 
-  function random() {
-    document.getElementById("video-metadata").innerHTML = Math.floor(math.random() * 1000000000 + 'views');
-}
-</script>
+    </script>
 
 
 
